@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Foliac</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="foliac" />
+	<meta name="keywords" content="foliac" />
+	<link rel="icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="header-part">
+		<header>
+			<div class="container">
+				<a href="#">
+					<img src="images/foliac-logo.png" alt="logo" class="logo">
+				</a>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="#" name="accueil">Accueil</a>
+						</li>
+						<li>
+							<a href="#" name="portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a href="#" name="about">About</a>
+						</li>
+						<li>
+							<a href="#" name="contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container text">
+				<h1>VOICI VOTRE PROCHAIN PORTFOLIO</h1>
+				<p>UN TEMPLATE PSD SIMPLE ET GRAYUIT</p>
+				<button>MES TRAVAUX</button>
+			</div>
+		</header>
+	</div>
+
+	<main role="main">
+
+		<section class="ba-portfolio">
+			<div class="container">
+				<div class="main-navi">
+					<ul class="portfolio-navi">
+						<li class="items-navi"><a data-filter=".portfolio-item--red" href="#">Red</a></li>
+						<li class="items-navi"><a data-filter=".portfolio-item--green" href="#">Green</a></li>
+						<li class="items-navi"><a data-filter=".portfolio-item--blue" href="#">Blue</a></li>
+						<li class="items-navi"><a data-filter=".portfolio-item--pink" href="#">Pink</a></li>
+						<li class="items-navi"><a data-filter=".portfolio-item--yellow" href="#">Yellow</a></li>
+						<li class="items-navi"><a data-filter=".portfolio-item--purple" href="#">Purple</a></li>
+					</ul>
+				</div>
+
+				<div class="portfolio-examp">
+					<div class="portfolio-item portfolio-item--red"></div>
+					<div class="portfolio-item portfolio-item--blue"></div>
+					<div class="portfolio-item portfolio-item--green"></div>
+					<div class="portfolio-item portfolio-item--purple"></div>
+					<div class="portfolio-item portfolio-item--yellow"></div>
+					<div class="portfolio-item portfolio-item--pink"></div>
+
+					<div class="portfolio-item portfolio-item--blue"></div>
+					<div class="portfolio-item portfolio-item--red"></div>
+					<div class="portfolio-item portfolio-item--green"></div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="section-about">
+			<div class="container">
+				<div class="about">
+					<h3>Michel Dupont</h3>
+					<h4>Webdesigner, illustrateur, auteur</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+						ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+						nulla pariatur.</p>
+					<button>ME CONTACTER</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact">
+			<div class="container">
+				<h3 class="contact-title">Me contacter</h3>
+				<form class="bs-form" action="#" method="post">
+					<lable class="field name">
+						<input type="text" name="Name" class="inp-one" placeholder="Votre nom">
+					</lable>
+					<span class="error-inp">Ошибка (Заполните поле маленькими буквами)!</span>
+					<label class="field email">
+						<input type="text" name="Email" placeholder="Votre email">
+					</label>
+					<span class="error-email">Заполните валидный email!</span>
+					<label class="field message">
+						<textarea name="Message" rows="6" class="area" placeholder="Votre message"></textarea>
+					</label>
+					<span class="error-area">Ошибка (Заполните поле маленькими буквами)!</span>
+					<label>
+						<button type="submit" name="Button" class="form-button">ENVOYER</button>
+					</label>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p>Copyright &copy; 2015 by beneggen -
+				<a url="http://beneggen.fr/" name="Beneggen">www.beneggen.fr</a>
+			</p>
+			<div class="social">
+				<a href="https://twitter.com/?lang=ru" name="Twitter" class="social">
+					<img src="images/Twitter.png" alt="Twitter">
+				</a>
+				<a href="https://www.linkedin.com/" name="Linkedin" class="social">
+					<img src="images/LinkedIn.png" alt="Linkedin">
+				</a>
+				<a href="https://dribbble.com/" name="Dribbble" class="social">
+					<img src="images/Dribbble.png" alt="Dribbble">
+				</a>
+				<a href="https://behance.com/" name="Behance" class="social">
+					<img src="images/Behance.png" alt="Behance">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

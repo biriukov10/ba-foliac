@@ -1,0 +1,613 @@
+/* Font */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400, 700);
+
+@font-face {
+  font-family: "Big John";
+  src: url("../fonts/big_john-webfont.eot");
+  src: url("../fonts/big_john-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/big_john-webfont.woff2") format("woff2"), url("../fonts/big_john-webfont.woff") format("woff"),
+    url("../fonts/big_john-webfont.ttf") format("truetype"),
+    url("../fonts/big_john-webfont.svg#big_johnregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Slim Joe";
+  src: url("../fonts/slim_joe-webfont.eot");
+  src: url("../fonts/slim_joe-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/slim_joe-webfont.woff2") format("woff2"), url("../fonts/slim_joe-webfont.woff") format("woff"),
+    url("../fonts/slim_joe-webfont.ttf") format("truetype"),
+    url("../fonts/slim_joe-webfont.svg#slim_joeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Typography */
+
+a,
+a:visited {
+  color: #48bf72;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f04059;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #48bf72;
+  border: 2px solid #48bf72;
+  border-radius: 3px;
+  font-size: 14px;
+  min-height: 39px;
+  line-height: 35px;
+  padding: 0 20px;
+  background: none;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {
+  background: #48bf72;
+  color: white;
+}
+
+input[type="submit"]:active,
+input[type="button"]:active,
+button:active,
+.ba-button:active {
+  text-decoration: none;
+  position: relative;
+  top: 1px;
+}
+
+.form-button {
+  color: white;
+  background: #48bf72;
+  letter-spacing: 0.22em;
+  width: 701px;
+}
+
+.form-button:hover {
+  color: #48bf72;
+  background: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+  transition: color 0.3s ease-in, border-color 0.3s ease-in, background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+}
+
+textarea {
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.1s ease-in;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  color: #3c4955;
+  margin: 0 auto;
+  margin: auto auto;
+}
+
+main {
+  margin: 0 auto;
+  margin: auto auto;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1180px;
+  margin: auto auto;
+}
+
+.menu {
+  list-style: none;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.header-part {
+  background: #3c4955 url("../images/Background.jpg") 50% no-repeat;
+  background-size: cover;
+  color: white;
+  padding-top: 36px;
+}
+
+img.logo {
+  float: left;
+}
+
+.menu li {
+  float: left;
+  padding: 38px 0 38px 55px;
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  padding-left: 56px;
+  position: relative;
+}
+
+.menu a:after {
+  content: "";
+  height: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 1px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  transform: skew(-10deg);
+}
+
+.menu li:first-child a:after {
+  display: none;
+}
+
+.menu li:first-child {
+  padding-left: 0;
+}
+
+.menu li:first-child a {
+  padding-left: 0;
+}
+
+.menu a:hover {
+  color: #48bf72;
+}
+
+.text {
+  padding: 292px 0 180px;
+  font-size: 30px;
+  font-family: "Slim Joe", sans-serif;
+  text-align: center;
+}
+
+.text p {
+  margin: 0 0 25px;
+}
+
+.text h1 {
+  font-family: "Big John", sans-serif;
+  font-size: 46px;
+  margin: 0;
+}
+
+/* Main section */
+
+.section {
+  background-color: white;
+  padding: 50px 0 90px;
+}
+
+.filter {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.filter a {
+  text-decoration: none;
+  display: inline-block;
+  color: #3c4955;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ccc;
+  border-radius: 2px;
+  padding: 0 16px;
+  height: 32px;
+  margin: 0 5px 10px;
+  line-height: 32px;
+}
+
+.filter a.active {
+  background-color: #48bf72;
+  color: white;
+}
+
+.filter a:hover {
+  background-color: #535f6b;
+  color: white;
+}
+
+.filter a:active {
+  text-decoration: none;
+  position: relative;
+  top: 1px;
+}
+
+/* Pictures */
+
+.pictures {
+  margin: 0 auto;
+}
+
+.first-pic {
+  width: 450px;
+  height: 302px;
+  border-radius: 10px;
+  margin-right: 40px;
+  float: left;
+}
+
+.second-pic {
+  width: 650px;
+  height: 304px;
+  border-radius: 10px;
+  float: right;
+  margin-bottom: 39px;
+}
+
+.therd-pic {
+  width: 650px;
+  height: 438px;
+  border-radius: 10px;
+  margin-right: 40px;
+  clear: both;
+  float: left;
+}
+
+.fouth-pic {
+  width: 450px;
+  height: 437px;
+  border-radius: 10px;
+  float: right;
+  overflow: hidden;
+}
+
+.first-pic,
+.second-pic,
+.therd-pic,
+.fouth-pic {
+  position: relative;
+}
+
+.hover {
+  position: absolute;
+  background-color: rgba(72, 191, 114, 0.8);
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 160px;
+  height: 55px;
+  color: #ffffff;
+}
+
+.overlay h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+  width: 200px;
+}
+
+.first-pic:hover .hover,
+.second-pic:hover .hover,
+.therd-pic:hover .hover,
+.fouth-pic:hover .hover {
+  visibility: visible;
+}
+
+/* About section */
+.section-about {
+  background: url(../images/backabout.jpg) no-repeat 50%;
+  position: relative;
+  padding: 150px 0 450px;
+  margin-right: -700px;
+  margin-left: -700px;
+  clear: both;
+}
+
+.section-about:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.about {
+  position: relative;
+  color: white;
+  z-index: 1;
+  max-width: 550px;
+  float: right;
+}
+
+.about h3 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.about h4 {
+  font-size: 22px;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.about p {
+  margin: 32px 0;
+}
+
+/* Form */
+
+.contact h3 {
+  margin: 0 0 45px;
+  text-align: center;
+  color: #48bf72;
+  font-size: 26px;
+  font-family: "Big John", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.contact {
+  width: 740px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.field {
+  display: block;
+  background: #3c4955;
+  padding: 2px 2px 2px 50px;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  /* margin-bottom: 30px; */
+}
+
+.field:after {
+  left: 50px;
+  top: 18px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-left-color: #3c4955;
+  border-width: 6px;
+  z-index: 2;
+}
+
+.field > * {
+  width: 100%;
+  display: block;
+  border: none;
+  background: white;
+  outline: none;
+  min-height: 46px;
+  padding: 0 23px 0 23px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #3c4955;
+}
+
+.field > textarea {
+  line-height: 1.3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  resize: vertical;
+}
+
+.field.name {
+  background-image: url(../images/user.svg);
+  background-position: 14px 14px;
+}
+
+.field.email {
+  background-image: url(../images/mail.svg);
+  background-position: 14px 17px;
+}
+
+.field.message {
+  background-image: url(../images/crayon.svg);
+  background-position: 14px 17px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 72px 0;
+  background: #3c4955;
+  color: white;
+}
+
+.footer p {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.footer a {
+  font-weight: 700;
+  color: white;
+}
+
+.footer a:hover {
+  color: #48bf72;
+}
+
+.footer p {
+  line-height: 56px;
+  margin: 0;
+}
+
+.social {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+.social a {
+  float: left;
+  position: relative;
+}
+
+.social {
+  margin-left: 40px;
+}
+
+.social:first-child {
+  margin-left: 0;
+}
+
+footer > * {
+  padding-bottom: 60px;
+  background: #3c4955;
+}
+
+.portfolio-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.portfolio-navi a {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #3c4955;
+  border-radius: 2px;
+  font-size: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 135px;
+  height: 36px;
+  background-color: #eaeaea;
+  text-align: center;
+  margin: 0 7px;
+  border-radius: 2px;
+}
+.portfolio-navi a.active {
+  background-color: #48bf72;
+  color: #fff;
+}
+
+.portfolio-item {
+  height: 300px;
+  width: 29.35%;
+  margin: 2%;
+}
+.portfolio-item--red {
+  background-color: red;
+  height: 350px;
+}
+.portfolio-item--green {
+  background-color: green;
+  height: 380px;
+}
+.portfolio-item--blue {
+  background-color: blue;
+}
+.portfolio-item--purple {
+  background-color: purple;
+  height: 280px;
+}
+.portfolio-item--pink {
+  background-color: pink;
+  height: 325px;
+}
+.portfolio-item--yellow {
+  background-color: yellow;
+  height: 375px;
+}
+
+.items-navi .nav-btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.error-inp {
+  visibility: hidden;
+  color: red;
+}
+.error-email {
+  visibility: hidden;
+  color: red;
+}
+.error-area {
+  visibility: hidden;
+  color: red;
+}
